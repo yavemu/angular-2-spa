@@ -10,9 +10,9 @@
       <p class="card-text">{{ heroe.bio }}</p>
       <p class="card-text"><small class="text-muted">Fecha de aparición: {{ heroe.aparicion }}</small></p>
 
-      <button class="btn btn-outline-primary btn-block" type="button" name="button">Ver más..</button>
+      <button (click)="verHeroe(i)" class="btn btn-outline-primary btn-block" type="button" name="button">Ver más..</button>
 
-      <a [routerLink]="['/heroe',i]" class="btn btn-outline-primary btn-block">Ver más link..</a>
+      <!-- <a [routerLink]="['/heroe',i]" class="btn btn-outline-primary btn-block">Ver más link..</a> -->
     </div>
   </div>
 
