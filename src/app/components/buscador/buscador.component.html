@@ -2,6 +2,9 @@
 <h2>Buscando por: <strong>{{ termino }}</strong> </h2>
 <hr>
 
+<div *ngIf="heroes.length == 0" class="alert alert-info animated fadeIn fast" role="alert">
+  <p>No se encontraron Héroes con esta busqueda.</p>
+</div>
 
 <div class="card-columns">
 
